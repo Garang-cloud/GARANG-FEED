@@ -1,0 +1,109 @@
+/* src/components/FeedbackList.module.css */
+
+.listContainer {
+    max-width: 600px; /* Specific width for the list */
+    margin: 2rem auto; /* Center the list, add top margin */
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .listContainer h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #34495e;
+    text-align: center;
+  }
+  
+  .feedbackItem {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .feedbackItem:last-child {
+    margin-bottom: 0;
+  }
+  
+  .feedbackHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .feedbackHeader strong {
+    font-size: 1.1rem;
+    color: #2c3e50;
+  }
+  
+  .feedbackHeader span {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .feedbackMessage {
+    margin: 8px 0;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .feedbackMeta {
+    font-size: 0.85rem;
+    color: #888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .deleteButton {
+    background: none;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s ease-in-out;
+    margin-left: 15px;
+    min-width: unset; /* Override global button min-width */
+  }
+  
+  .deleteButton:hover {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .deleteButton:disabled {
+    background-color: #f2f2f2;
+    color: #aaaaaa;
+    border-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .noFeedback {
+    text-align: center;
+    color: #777;
+    padding: 20px;
+    border: 1px dashed #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .loadingMessage, .errorMessage {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1rem;
+  }
+  
+  /* Error message will now use global error-message class */
+  /* .errorMessage {
+    color: #d9534f;
+  } */

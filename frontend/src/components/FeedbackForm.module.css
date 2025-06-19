@@ -1,0 +1,42 @@
+/* src/components/FeedbackForm.module.css */
+
+.formContainer {
+    max-width: 400px; /* Specific width for the form */
+    margin: 0 auto; /* Center the form */
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center; /* Center the heading and button */
+  }
+  
+  .formContainer h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #34495e;
+  }
+  
+  /* Input/textarea styling is handled globally in index.css,
+     but if you need specific tweaks for this form, you can add them here.
+     For now, we rely on the global styles for consistency.
+  */
+  
+  .formContainer button {
+    width: 100%; /* Make button full width */
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #007bff; /* Blue for primary action */
+    transition: background-color 0.3s ease;
+  }
+  
+  .formContainer button:hover {
+    background-color: #0056b3;
+  }
+  
+  .formContainer button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Message styling will use global classes defined in index.css */
+  /* No need for .errorMessage, .successMessage here as they are global now */
